@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>May Week 1</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="Test_files/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <style>
+      :root {
+        --red: #ef233c;
+        --darkred: #c00424;
+        --platinum: #e5e5e5;
+        --black: #2b2d42;
+        --white: #fff;
+        --thumb: #edf2f4;
+      }
+
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font: 16px / 24px "Rubik", sans-serif;
+        color: var(--black);
+        background: var(--platinum);
+        margin: 50px 0;
+      }
+
+      .container {
+        /* width: 300px; */
+        padding: 0 15px;
+        margin: 0 auto;
+      }
+
+      h2 {
+        font-size: 32px;
+        margin-bottom: 1em;
+      }
+
+      .cards {
+        width: 300px;
+        max-height: 700px;
+
+        list-style: none;
+        overflow-y: scroll;
+        overflow-x: hidden;
+      }
+
+      .card {
+        width: 270px;
+        display: flex;
+        flex-direction: row;
+        flex: 0 0 100%;
+        padding: 20px;
+        background: var(--white);
+        border-radius: 12px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 15%);
+        scroll-snap-align: start;
+        transition: all 0.2s;
+        margin-bottom: 10px;
+      }
+
+      .card:not(:last-child) {
+        margin-right: 10px;
+      }
+
+      .card:hover {
+        color: var(--white);
+        background: var(--red);
+      }
+
+      .card .card-title {
+        font-size: 20px;
+      }
+
+      .card .card-content {
+        margin: 10px 0;
+        max-width: 100%;
+        padding-left: 5px;
+      }
+
+      .card .card-link-wrapper {
+        margin-top: auto;
+      }
+
+      .card .card-link {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        background: var(--red);
+        padding: 6px 12px;
+        border-radius: 8px;
+        transition: background 0.2s;
+      }
+
+      .card:hover .card-link {
+        background: var(--darkred);
+      }
+
+      .cards::-webkit-scrollbar {
+        height: 12px;
+      }
+
+      .cards::-webkit-scrollbar-thumb,
+      .cards::-webkit-scrollbar-track {
+        border-radius: 92px;
+      }
+
+      .cards::-webkit-scrollbar-thumb {
+        background: var(--darkred);
+      }
+
+      .cards::-webkit-scrollbar-track {
+        background: var(--thumb);
+      }
+      #navbar {
+        overflow: hidden;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 13px;
+      }
+
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+
+      #navbar a.active {
+        background-color: #498b73;
+        color: white;
+      }
+
+      .content {
+        padding: 16px;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+    </style>
+    <script
+      src="https://kit.fontawesome.com/c1b3b95b1c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="navbar" class="sticky">
+      <a href="index.html">Month</a>
+      <a href="MayWeek1.html">Week 1</a>
+      <a href="MayWeek2.html">Week 2</a>
+      <a href="MayWeek3.html">Week 3</a>
+      <a href="MayWeek4.html">Week 4</a>
+      <a href="MayWeek5.html">Week 5</a>
+    </div>
+
+    <div class="content">
+      <div class="container">
+        <h2>May</h2>
+        <h3>Week 1</h3>
+        <ul class="cards">
+          <li class="card">
+            <div>
+              <h5 class="card-title">Monday, 1st May</h5>
+              <div class="card-content">
+                <p></p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h5 class="card-title">Tuesday, 2nd May</h5>
+              <div class="card-content">
+                <p>
+                  <i class="fa-solid fa-shield-halved"></i>
+                  12.00 - 15.00: Tutorial (A.5.20A)
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h5 class="card-title">Wednesday, 3rd May</h5>
+              <div class="card-content">
+                <p>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h5 class="card-title">Thursday, 4th May</h5>
+              <div class="card-content">
+                <p>
+                <i class="fa-solid fa-lock"></i>
+                12.00 - 15.00: Tutorial (A.2.17A) 
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h5 class="card-title">Friday, 5th May</h5>
+              <div class="card-content">
+                <p>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h5 class="card-title">Saturday, 6th May</h5>
+              <div class="card-content">
+                <p>
+                </p>
+                <p>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="card">
+            <div>
+              <h5 class="card-title">Sunday, 7th May</h5>
+              <div class="card-content">
+                <p>
+              <i class="fa-solid fa-house"></i>
+            Holiday</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
